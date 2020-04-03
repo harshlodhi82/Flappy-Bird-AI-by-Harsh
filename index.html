@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flappy Bird</title>
+</head>
+<body>
+    
+    <div class="cont">
+        <div class="cont1">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <div class="cont2">
+            <table>
+                <tr>
+                    <td><p>Generations</p></td>
+                    <td><p id="gener">00</p></td>
+                </tr>
+                <tr>
+                    <td><p>Best fitness</p></td>
+                    <td><p id="fit">00</p></td>
+                </tr>
+                <tr>
+                    <td><p>Mutation</p></td>
+                    <td><p id="mutaion">00</p></td>
+                </tr>
+                <tr>
+                    <td><p>Population</p></td>
+                    <td><p id="popu">00</p></td>
+                </tr>
+                <tr>
+                    <td><p>Score</p></td>
+                    <td><p id="score">00</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.1/math.min.js"></script>
+    <script src="helpers/elements.js"></script>
+    <script src="helpers/constant.js"></script>
+    <script src="helpers/helper.js"></script>
+    <script src="objects/bird.js"></script>
+    <script src="objects/pipe.js"></script>
+    <script src="objects/line.js"></script>
+    <script src="services/genetics.js"></script>
+    <script src="services/nn.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+let canvas = document.getElementById("myCanvas")
+const fitnessElm  = document.getElementById('fit')
+const mutaionElm  = document.getElementById('mutaion')
+const generationElm  = document.getElementById('gener')
+const populationElm  = document.getElementById('popu')
+const scoresElm  = document.getElementById('score')
