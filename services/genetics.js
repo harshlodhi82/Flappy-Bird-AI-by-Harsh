@@ -34,8 +34,6 @@ const calculateFitness = () => {
 const chooseParents = () => {
     let dadIndex = getParentIndex()
     let momIndex = getParentIndex()
-    console.log(dadIndex,momIndex );
-    
     return {
         dad: savedBirds[dadIndex],
         mom: savedBirds[momIndex],
