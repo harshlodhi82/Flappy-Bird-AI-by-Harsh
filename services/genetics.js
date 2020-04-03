@@ -1,7 +1,7 @@
 const nextGeneration = () => {
     calculateFitness()
     bestFitness = (savedBirds[savedBirds.length - 1]) ? savedBirds[savedBirds.length - 1].fitness : 0
-    
+
     let { dad, mom } = chooseParents()
     for (let i = 0; i < TOTAL_BIRDS; i++) {
         let childBird = generateChild(dad, mom)
@@ -21,9 +21,9 @@ const calculateFitness = () => {
     for (let i = 0; i < savedBirds.length; i++) {
         const bird = savedBirds[i];
         // bird.fitness = bird.score / sum
-        bird.fitness = Math.pow(bird.score / sum , powFitness)
-        t+=bird.fitness
-        if(maxFitness <  bird.fitness){
+        bird.fitness = Math.pow(bird.score / sum, powFitness)
+        t += bird.fitness
+        if (maxFitness < bird.fitness) {
             maxFitness = bird.fitness
             mxI = i
         }

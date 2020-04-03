@@ -41,7 +41,7 @@ const clearBirds = () => {
     for (let i = 0; i < birds.length; i++) {
         let bird = birds[i]
         if (bird.isIntersectWith(pipes[0]) || bird.isIntersectWith(pipes[1]) || bird.isIntersectWithBorder()) {
-            savedBirds.push(birds.splice(i, 1)[0]) 
+            savedBirds.push(birds.splice(i, 1)[0])
         }
     }
 }
@@ -55,7 +55,7 @@ const resetForGameOver = () => {
 }
 
 const dataInitializer = (data) => {
-    fitnessElm.innerText = (data.fitness) ? data.fitness : '00'
+    fitnessElm.innerText = (data.fitness) ? Math.pow(data.fitness, 1 / powFitness) : '00'
     mutaionElm.innerText = (data.mutaion) ? `${data.mutaion * 100}%` : '00'
     generationElm.innerText = (data.generation) ? data.generation : '00'
     populationElm.innerText = (data.population) ? data.population : '00'
