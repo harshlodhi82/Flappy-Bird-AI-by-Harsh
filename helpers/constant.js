@@ -8,5 +8,5 @@ const gap = 200
 const minHightPipe = 50
 const TOTAL_BIRDS = 500
 const MUTATION = 0.1
-const powFitness = 100
+const powFitness = 6
 

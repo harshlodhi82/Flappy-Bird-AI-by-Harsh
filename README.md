@@ -1,5 +1,5 @@
 # Flappy Bird AI by Harsh Lodhi
-Flappy bird is a side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them. The AI developed by me is very optimized and fast learner, It takes arround 20-50 generations to learn the game.
+Flappy bird is a side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them. The AI developed by me is very optimized and fast learner, It takes arround 10-30 generations to learn the game.
 
 ## Installation
 Just need to take a clone from [git](https://github.com/harshlodhi82/Flappy-Bird-AI-by-Harsh.git).

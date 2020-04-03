@@ -21,7 +21,7 @@ const calculateFitness = () => {
     for (let i = 0; i < savedBirds.length; i++) {
         const bird = savedBirds[i];
         // bird.fitness = bird.score / sum
-        bird.fitness = Math.pow(bird.score / sum , 2)
+        bird.fitness = Math.pow(bird.score / sum , powFitness)
         t+=bird.fitness
         if(maxFitness <  bird.fitness){
             maxFitness = bird.fitness
