@@ -61,3 +61,8 @@ const dataInitializer = (data) => {
     populationElm.innerText = (data.population) ? data.population : '00'
     scoresElm.innerText = (data.scores) ? data.scores : '00'
 }
+
+const signatureVarification = ()=>{
+    if(nameElm.innerText !== 'Harsh Lodhi')
+        throw new Error("Signature Error")
+}

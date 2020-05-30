@@ -5,16 +5,17 @@
 
 .cont{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    position: relative;
 }
 
 .cont1{
+    width: 700px;
     float: left;
     padding: 10px;
 }
 
 .cont2{
-    float: left;
     padding: 10px;
 }
 

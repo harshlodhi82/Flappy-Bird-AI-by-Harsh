@@ -30,6 +30,7 @@ const setup = () => {
 const draw = () => {
     let i = 0
     while (i < cycle) {
+        signatureVarification()
         ctx.clearRect(0, 0, WH, WH)
         clearBirds()
         clearPipes()
